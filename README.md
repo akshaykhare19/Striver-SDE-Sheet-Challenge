@@ -9,7 +9,7 @@
       </ol>
   </li>
   
-  <li><h3>Day 1 (June 30, 2022):</h3>
+  <li><h3>Day 2 (June 30, 2022):</h3>
       <ol>
         <li><h4>Kaden's Algorithm</h4></li>
         <li><h4>Stocks Buy and Sell</h4></li>
