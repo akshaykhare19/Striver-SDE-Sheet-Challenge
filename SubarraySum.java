@@ -57,27 +57,29 @@ public class SubarraySum
     //SC - O(1)
     public static int kadaneAlgorithm(int a[])
     {
-        int maxSum = 0;
+        int maxSum = Integer.MIN_VALUE;
         int currSum = 0;
-        int startIdx = 0, endIdx = 0;
+        int maxEle = Integer.MIN_VALUE;
+        // int startIdx = 0, endIdx = -1;
         for(int i = 0; i < a.length; i++)
         {
-            if(currSum == 0) startIdx = i;
+            // if(currSum == 0) startIdx = i;
             currSum += a[i];
             if(maxSum < currSum){
                 maxSum = currSum;
-                endIdx = i;
+                // endIdx = i;
             }
             if(currSum < 0) currSum = 0;
             
         }
-        System.out.println("Start Index = " + startIdx + "\nEnd Index = " + endIdx);
+        if(maxSum==0) maxSum = maxEle;
+        // System.out.println("Start Index = " + startIdx + "\nEnd Index = " + endIdx);
         return maxSum;
     }
 
     public static void main(String args[])
     {
-        int a[] = {1, 1, 2, 3, -4, 8, -1};
+        int a[] = {-14, -15, -2, -3, -4, -8, -13};
         System.out.println(bruteLargestSubarraySum(a));
         System.out.println("Kadane's Algorithm");
         System.out.println(kadaneAlgorithm(a));
