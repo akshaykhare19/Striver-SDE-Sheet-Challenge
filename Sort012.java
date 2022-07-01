@@ -34,7 +34,7 @@ public class Sort012
                 a[i] = 1;
                 c1--;
             }
-            else{
+            else if(c2>0){
                 a[i] = 2;
                 c2--;
             }
