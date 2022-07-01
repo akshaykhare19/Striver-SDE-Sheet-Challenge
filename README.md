@@ -15,5 +15,12 @@
         <li><h4>Stocks Buy and Sell</h4></li>
       </ol>
   </li>
+
+  <li><h3>Day 3 (July 1, 2022):</h3>
+      <ol type="1" start="5">
+        <li><h4>Sort 0s, 1s & 2s</h4></li>
+        <li><h4>Next Permutations</h4></li>
+      </ol>
+  </li>
   
 </ul>
