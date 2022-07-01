@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /*
  *  Find the Duplicate Number
 Medium
@@ -32,9 +34,37 @@ Constraints:
  */
 public class FindDuplicate
 {
+    //TC - O(nlogn)
+    //SC - O(1)
+    private static int brute(int a[])
+    {
+        Arrays.sort(a);
+        for(int i = 0; i < a.length-1; i++){
+            if(a[i]==a[i+1]){
+                return a[i];    
+            }
+        }
+        return -1;
+    }
+
+
+    //TC - O(n)
+    //SC - O(n)
+    private static int better(int a[])
+    {
+        int aux[] = new int[a.length];
+
+        for(int i = 0; i < a.length; i++){
+            aux[a[i]]++;
+            if(aux[a[i]] > 1) return a[i];
+        }
+
+        return -1;
+    }
+
     //TC - O(n)
     //SC - O(1)
-    private static int findDuplicate(int[] nums) {
+    private static int optimal(int[] nums) {
         //Using cycle detection in linked list technique.
         //Using slow and fast pointers
         int slow = nums[0];
@@ -60,6 +90,8 @@ public class FindDuplicate
     public static void main(String args[])
     {
         int a[] = {3,3,5,4,1,3};
-        System.out.println(findDuplicate(a));
+        System.out.println("Brute : " + brute(a));
+        System.out.println("Better : " + better(a));
+        System.out.println("Optimal : " + optimal(a));
     }  
 }
