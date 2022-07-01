@@ -21,6 +21,7 @@
         <li><h4>Sort 0s, 1s & 2s</h4></li>
         <li><h4>Next Permutations</h4></li>
         <li><h4>Repeating & Missing Number</h4></li>
+        <li><h4>Find Duplicate in N+1 size array</h4></li>
       </ol>
   </li>
   
