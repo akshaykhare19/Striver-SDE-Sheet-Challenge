@@ -35,6 +35,7 @@
   <li><h3>Day 5 (July 3, 2022):</h3>
       <ol type="1" start="11">
         <li><h4>Merge Overlapping Subintervals</h4></li>
+        <li><h4>Count Inversions</h4></li>
       </ol>
   </li>
   
