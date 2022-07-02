@@ -28,6 +28,7 @@
   <li><h3>Day 4 (July 2, 2022):</h3>
       <ol type="1" start="9">
         <li><h4>Rotate Image</h4></li>
+        <li><h4>Merger Sorted Arrays</h4></li>
       </ol>
   </li>
   
