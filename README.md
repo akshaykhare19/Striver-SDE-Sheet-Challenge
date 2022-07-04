@@ -42,6 +42,7 @@
   <li><h3>Day 6 (July 4, 2022):</h3>
       <ol type="1" start="13">
         <li><h4>Search in 2D Matrix</h4></li>
+        <li><h4>Power(x,n)</h4></li>
       </ol>
   </li>
   
