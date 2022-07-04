@@ -43,6 +43,7 @@
       <ol type="1" start="13">
         <li><h4>Search in 2D Matrix</h4></li>
         <li><h4>Power(x,n)</h4></li>
+        <li><h4>Majority Element(>N/2)</h4></li>
       </ol>
   </li>
   
