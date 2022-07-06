@@ -55,4 +55,10 @@
       </ol>
   </li>
   
+  <li><h3>Day 8 (July 6, 2022):</h3>
+      <ol type="1" start="18">
+        <li><h4>Reverse Pairs</h4></li>
+      </ol>
+  </li>
+  
 </ul>
