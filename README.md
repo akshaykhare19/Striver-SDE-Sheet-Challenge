@@ -45,6 +45,12 @@
         <li><h4>Power(x,n)</h4></li>
         <li><h4>Majority Element(>N/2)</h4></li>
         <li><h4>Majority Element(>N/3)</h4></li>
+      </ol>
+  </li>
+  
+  
+  <li><h3>Day 7 (July 5, 2022):</h3>
+      <ol type="1" start="17">
         <li><h4>Unique Paths</h4></li>
       </ol>
   </li>
