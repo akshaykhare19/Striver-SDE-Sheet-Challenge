@@ -66,6 +66,7 @@
         <li><h4>Two Sum</h4></li>
         <li><h4>Longest Consecutive Subsequence</h4></li>
         <li><h4>Reverse Linked List</h4></li>
+        <li><h4>Mid of Linked List</h4></li>
       </ol>
   </li>
   
