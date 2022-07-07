@@ -40,14 +40,39 @@ public class UniquePaths
         
         return rp+dp;
     }
+
+    private static int uniquePathsOptimalHelper(int sr, int sc, int dr, int dc, int dp[][]) {
+        if(sr > dr || sc > dc) return 0;
+
+        if(sr==dr && sc==dc) return 1;
+
+        if(dp[sr][sc] != -1) return dp[sr][sc];
+        
+        dp[sr][sc] = uniquePathsOptimalHelper(sr, sc+1, dr, dc, dp) + uniquePathsOptimalHelper(sr+1, sc, dr, dc, dp);
+        return dp[sr][sc];
+    }
     
     
     private static int brute(int m, int n) {
         return uniquePathsHelper(0, 0, m-1, n-1);
     }
 
+    private static int optimal(int m, int n) {
+        int dp[][] = new int[m][n];
+
+        for(int i = 0; i < m; i++){
+            for(int j = 0; j < n; j++){
+                dp[i][j] = -1;
+            }
+        }
+
+        return uniquePathsOptimalHelper(0, 0, m-1, n-1, dp);
+    }
+
     public static void main(String args[])
     {
         System.out.println("Brute : " + brute(4, 5));
+
+        System.out.println("Optimal : " + optimal(4, 5));
     }    
 }
