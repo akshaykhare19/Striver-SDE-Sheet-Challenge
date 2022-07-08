@@ -76,6 +76,7 @@
         <li><h4>Delete Kth Node from last</h4></li>
         <li><h4>Delete Given Node in O(1)</h4></li>
         <li><h4>Add Two Number Represented by Linked List</h4></li>
+        <li><h4>Intersection of two Linked Lists</h4></li>
       </ol>
   </li>
   
