@@ -84,6 +84,7 @@
       <ol type="1" start="28">
         <li><h4>Detect cycle in Linked List</h4></li>
         <li><h4>Palindrome Linked List</h4></li>
+        <li><h4>Detect beginning of cycle in Linked List</h4></li>
       </ol>
   </li>
   
