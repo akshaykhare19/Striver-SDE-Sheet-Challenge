@@ -58,7 +58,7 @@ public class CopyRandomPointer
             this.random = null;
         }
     }
-
+    
     public Node copyRandomList(Node head) {
         if(head==null) return head;
         //insert duplicate nodes in between
