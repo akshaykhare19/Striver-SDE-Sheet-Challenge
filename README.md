@@ -93,6 +93,7 @@
       <ol type="1" start="32">
         <li><h4>Rotate a Linked List</h4></li>
         <li><h4>Copy a Linked List with Random Pointer</h4></li>
+        <li><h4>Three Sum</h4></li>
       </ol>
   </li>
   
