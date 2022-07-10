@@ -29,18 +29,23 @@ Constraints:
 
 public class RotateLinkedList
 {
-    class Node
+    public static class ListNode
     {
-	    int data;
-	    Node next;
-	    Node bottom;
+        int val;
+        ListNode next;
         
-	    Node(int d)
-	    {
-	    	data = d;
-	    	next = null;
-	    	bottom = null;
-	    }
+        ListNode() {}
+
+        ListNode(int val)
+        {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next)
+        {
+            this.val = val;
+            this.next = next;
+        }
     }
 
     public ListNode rotate(ListNode head){
