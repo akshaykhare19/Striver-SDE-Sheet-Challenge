@@ -65,7 +65,9 @@ public class RotateLinkedList
         
     }
     
-    public ListNode rotateRight(ListNode head, int k) {
+    //TC - O(k*n)
+    //SC - O(1)
+    public ListNode rotateRightBrute(ListNode head, int k) {
         ListNode ans = head;
         
         ListNode temp = head;
@@ -81,4 +83,35 @@ public class RotateLinkedList
         }
         return ans;
     }
+    
+    //TC - O(n)
+    //SC - O(1)
+    public ListNode rotateRight(ListNode head, int k) {
+        if(head==null || head.next==null) return head;
+        
+        ListNode ans = head;
+        ListNode temp = head;
+        ListNode tail = null;
+        
+        int size = 0;
+        while(temp!=null){
+            temp = temp.next;
+            size++;
+            if(temp!=null && temp.next==null){
+                tail = temp;
+            }
+        }
+        temp = head;
+        tail.next = head;
+        
+        if(k>=size) k=k%size;
+        int n = size-k;
+        while(n-- > 0){
+            ans = ans.next;
+            if(n==1) temp = ans;
+        }
+        temp.next = null;
+        return ans;
+    }
+
 }
