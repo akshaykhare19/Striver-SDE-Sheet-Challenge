@@ -101,6 +101,7 @@
       <ol type="1" start="35">
         <li><h4>Trapping Rainwater</h4></li>
         <li><h4>Remove Duplicates from Sorted Array</h4></li>
+        <li><h4>Maximum Continuous Ones</h4></li>
       </ol>
   </li>
   
