@@ -52,11 +52,51 @@ Constraints:
 1 ≤ N ≤ 105
 0 ≤ start[i] < end[i] ≤ 105
  */
-
+import java.util.*;
 public class NMeetingsInOneRoom
 {
+    static class Meeting {
+        int start;
+        int end;
+        int pos;
+        
+        Meeting(int start, int end, int pos){
+            this.start = start;
+            this.end = end;
+            this.pos = pos;
+        }
+    }
+
+    public static int maxMeetings(int start[], int end[], int n)
+    {
+        // add your code here
+        Meeting meetOrder[] = new Meeting[n];
+        for(int i = 0; i < n; i++){
+            Meeting meet = new Meeting(start[i], end[i], i+1);
+            meetOrder[i] = meet;
+        }
+        
+        // MeetingComparator mc = new MeetingComparator();
+        Arrays.sort(meetOrder, (a,b) -> a.end-b.end);
+        
+        int lastEnd = meetOrder[0].end;
+        int cnt = 1;
+        for(Meeting meet : meetOrder){
+            if(meet.start > lastEnd){
+                lastEnd = meet.end;
+                cnt++;
+            }
+            // System.out.println("Start = "+meet.start+"; End = "+meet.end+"; pos = "+meet.pos);
+        }
+        return cnt;
+    }
+
     public static void main(String args[])
     {
+        int n = 6;
+        int start[] = {1,3,0,5,8,5};
+        int end[] =  {2,4,6,7,9,9};
 
+        System.out.println(maxMeetings(start, end, n));
     }
 }
