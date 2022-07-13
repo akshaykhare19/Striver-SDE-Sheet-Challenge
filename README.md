@@ -115,6 +115,7 @@
       <ol type="1" start="39">
         <li><h4>Minimum Platforms</h4></li>
         <li><h4>Job Sequence</h4></li>
+        <li><h4>Fractional Knapsack</h4></li>
       </ol>
   </li>
   
