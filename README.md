@@ -111,4 +111,10 @@
       </ol>
   </li>
   
+  <li><h3>Day 15 (July 13, 2022):</h3>
+      <ol type="1" start="39">
+        <li><h4>Minimum Platforms</h4></li>
+      </ol>
+  </li>
+  
 </ul>
