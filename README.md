@@ -119,4 +119,10 @@
       </ol>
   </li>
   
+  <li><h3>Day 16 (July 14, 2022):</h3>
+      <ol type="1" start="42">
+        <li><h4>Subset Sums</h4></li>
+      </ol>
+  </li>
+  
 </ul>
