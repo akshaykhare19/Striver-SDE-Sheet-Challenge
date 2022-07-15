@@ -128,6 +128,7 @@
   <li><h3>Day 17 (July 15, 2022):</h3>
       <ol type="1" start="43">
         <li><h4>Nth root of M</h4></li>
+        <li><h4>Single element in a sorted array of duplicate elements</h4></li>
       </ol>
   </li>
   
