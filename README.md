@@ -132,4 +132,10 @@
       </ol>
   </li>
   
+  <li><h3>Day 18 (July 16, 2022):</h3>
+      <ol type="1" start="45">
+        <li><h4>Search in Sorted and Rotated Array</h4></li>
+      </ol>
+  </li>
+  
 </ul>
