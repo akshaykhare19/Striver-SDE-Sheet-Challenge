@@ -142,6 +142,7 @@
   <li><h3>Day 19 (July 17, 2022):</h3>
       <ol type="1" start="47">
         <li><h4>Books Allocation</h4></li>
+        <li><h4>Chess Tournament/Aggressive Cows</h4></li>
       </ol>
   </li>
   
