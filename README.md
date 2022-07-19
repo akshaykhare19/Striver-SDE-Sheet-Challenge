@@ -155,6 +155,7 @@
   <li><h3>Day 21 (July 19, 2022):</h3>
       <ol type="1" start="50">
         <li><h4>Valid Paranthesis</h4></li>
+        <li><h4>Next Greater Element</h4></li>
       </ol>
   </li>
   
