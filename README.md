@@ -159,4 +159,10 @@
       </ol>
   </li>
   
+  <li><h3>Day 22 (July 20, 2022):</h3>
+      <ol type="1" start="52">
+        <li><h4>Previous Smaller Element</h4></li>
+      </ol>
+  </li>
+  
 </ul>
