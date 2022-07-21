@@ -98,7 +98,6 @@ public class SetMatrixZeroes
     }
 
 
-    //Some problem with optimal set zeroes function right now
     // //TC - O(n*m)
     // //SC - O(1)
     public static void optimalSetZeroes(int[][] matrix) {
