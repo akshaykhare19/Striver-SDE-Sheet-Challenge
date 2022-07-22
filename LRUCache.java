@@ -52,8 +52,77 @@ Submissions
 import java.util.*;
 public class LRUCache
 {
+    Node head = new Node(0,0);
+    Node tail = new Node(0,0);
+    HashMap<Integer, Node> cache = new HashMap<>();
+    int capacity;
+    
+    public LRUCache(int capacity) {
+        this.capacity = capacity;
+        head.next = tail;
+        tail.prev = head;
+    }
+    
+    private void insert(Node node) {
+        Node headNext = head.next;
+        head.next = node;
+        node.next = headNext;
+        headNext.prev = node;
+        node.prev = head;
+    }
+    
+    private void delete(Node node) {
+        node.next.prev = node.prev;
+        node.prev.next = node.next;
+    }
+    
+    public int get(int key) {
+        if(cache.containsKey(key)){
+            int v = cache.get(key).value;
+            delete(cache.get(key));
+            cache.remove(key);
+            Node nn = new Node(key, v);
+            insert(nn);
+            cache.put(key, nn);
+            return v;
+        }
+        return -1;
+    }
+    
+    public void put(int key, int value) {
+        Node nn = new Node(key, value);
+        if(cache.containsKey(key)){
+            delete(cache.get(key));
+            cache.remove(key);
+        }
+        else if(cache.size()==capacity){
+            int k = tail.prev.key;
+            delete(tail.prev);
+            cache.remove(k);
+        }
+        insert(nn);
+        cache.put(key, nn);
+        // System.out.println("Key : " + nn.key + " Value : " + nn.value);
+    }
+    
+    class Node {
+        int key, value;
+        Node next, prev;
+        
+        Node(int key, int value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+
     public static void main(String args[])
     {
-
+        LRUCache obj = new LRUCache(2);
+        obj.put(2,1);
+        obj.put(1,1);
+        obj.put(2,3);
+        obj.put(4,5);
+        System.out.println(obj.get(1));
+        System.out.println(obj.get(2));
     }    
 }
