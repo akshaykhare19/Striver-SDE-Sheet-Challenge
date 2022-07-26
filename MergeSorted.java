@@ -61,6 +61,9 @@ public class MergeSorted
      * SC - O(m+n)
      */
 
+    //Approach 2
+    //TC - O(m+n)
+    //SC - O(m+n)
     private static void merge(int[] nums1, int m, int[] nums2, int n) {
         
         if(n==0) return;
