@@ -171,4 +171,10 @@
       </ol>
   </li>
   
+  <li><h3>Day 24 (July 30, 2022):</h3>
+      <ol type="1" start="54">
+        <li><h4>Reverse Nodes in Groups of Size K</h4></li>
+      </ol>
+  </li>
+  
 </ul>
