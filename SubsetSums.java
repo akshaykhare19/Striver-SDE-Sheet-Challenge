@@ -47,13 +47,15 @@ public class SubsetSums
 {
     private static void subsetSums(ArrayList<Integer> arr, int idx, int n, int sum, ArrayList<Integer> ans){
         if(idx==n){
+            // System.out.println(sum);
             ans.add(sum);
             return;
         }
         
-        subsetSums(arr, idx+1, n, sum, ans);
-        sum+=arr.get(idx);
-        // ans.add(sum);
+        //take
+        subsetSums(arr, idx+1, n, sum+arr.get(idx), ans);
+        
+        //not take
         subsetSums(arr, idx+1, n, sum, ans);
         
 
@@ -63,6 +65,7 @@ public class SubsetSums
         // code here
         ArrayList<Integer> ans = new ArrayList<>();
         subsetSums(arr, 0, n, 0, ans);
+        Collections.sort(ans);
         return ans;
     }
 
