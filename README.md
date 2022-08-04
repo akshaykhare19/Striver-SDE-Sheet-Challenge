@@ -176,5 +176,13 @@
         <li><h4>Reverse Nodes in Groups of Size K</h4></li>
       </ol>
   </li>
+
+  <li><h3>Day 25 (August 5, 2022):</h3>
+      <ol type="1" start="55">
+        <li><h4>Subset-II</h4></li>
+        <li><h4>Combination Sum</h4></li>
+      </ol>
+  </li>
+
   
 </ul>
