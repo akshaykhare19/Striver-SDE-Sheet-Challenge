@@ -182,6 +182,7 @@
         <li><h4>Subset-II</h4></li>
         <li><h4>Combination Sum</h4></li>
         <li><h4>Combination Sum 2</h4></li>
+        <li><h4>Palindrome Partitioning</h4></li>
       </ol>
   </li>
 
