@@ -47,7 +47,7 @@ Submissions
 import java.util.*;
 public class CombinationSumII
 {
-    //TC - O(k * 2^t), where t is the target and k is the average size of ds 
+    //TC - O(k * 2^N), k is the average size of ds 
     //SC - O(k * x), where x is the no. of combinations i.e. variable space complexity
     private static void uniqueCombinations(int a[], int idx, int t, List<Integer> ds, List<List<Integer>> ans) {
         if(t<=0){
