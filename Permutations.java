@@ -38,6 +38,37 @@ Submissions
 import java.util.*;
 public class Permutations
 {
+    private static void permuteHelper(int a[], int idx, List<List<Integer>> ans){ 
+        if(idx==a.length){
+            List<Integer> ds = new ArrayList<>();
+            for(int i : a){
+                ds.add(i);
+            }
+            ans.add(new ArrayList<>(ds));
+            return;
+        }
+        
+        for(int i = idx; i < a.length; i++){
+            swap(a, idx, i);
+            permuteHelper(a, idx+1, ans);
+            swap(a, idx, i);
+        }
+    }
+    
+    private static void swap(int a[], int i, int j){
+        int temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+        i++;
+        j--;
+    }
+    
+    private static List<List<Integer>> permuteBetter(int[] nums) {
+        List<List<Integer>> ans = new ArrayList<>();
+        permuteHelper(nums, 0, ans);
+        return ans;
+    }
+
     //TC - O(N! * N)
     //SC - O(N) + O(N)
     private static void permute(int a[], List<Integer> ds, List<List<Integer>> ans, boolean freq[]){
@@ -68,5 +99,6 @@ public class Permutations
     {
         int nums[] = {1,2,3};
         System.out.println(permute(nums));
+        System.out.println(permuteBetter(nums));
     }    
 }
