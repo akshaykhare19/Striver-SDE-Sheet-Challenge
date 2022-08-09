@@ -192,6 +192,12 @@
         <li><h4>Permutations</h4></li>
       </ol>
   </li>
+  
+  <li><h3>Day 27 (August 9, 2022):</h3>
+      <ol type="1" start="61">
+        <li><h4>N Queens</h4></li>
+      </ol>
+  </li>
 
   
 </ul>
