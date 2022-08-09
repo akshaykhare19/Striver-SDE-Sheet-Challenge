@@ -199,5 +199,11 @@
       </ol>
   </li>
 
+  <li><h3>Day 28 (August 10, 2022):</h3>
+      <ol type="1" start="62">
+        <li><h4>Sudoku Solver</h4></li>
+      </ol>
+  </li>
+
   
 </ul>
