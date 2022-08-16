@@ -1,5 +1,5 @@
 # Striver-SDE-Sheet-Challenge
-<h2>Day to Day Progress of DSA Practice from Striver's SDE Sheet</h2>
+<h3>---Day to Day Progress of DSA Practice from Striver's SDE Sheet</h3>
 
 <ul>
 
