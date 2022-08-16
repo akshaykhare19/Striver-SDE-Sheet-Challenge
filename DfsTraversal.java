@@ -65,9 +65,8 @@ public class DfsTraversal
     }
     
     
-    // Function to return a list containing the DFS traversal of the graph.
+    // Function to return a list containing the DFS traversal of the= graph.
     private static ArrayList<Integer> dfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
-        // Code here
         boolean visited[] = new boolean[V];
         ArrayList<Integer> ans = new ArrayList<>();
         for(int i = 0; i < V; i++){
