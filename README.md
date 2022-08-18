@@ -215,7 +215,13 @@
   
   <li><h3>Day 30 (August 17, 2022):</h3>
       <ol type="1" start="65">
-        <li><h4>Min/Max Heap Implementation</h4></li>
+        <li><h4>Min Heap Implementation(Incorrect)</h4></li>
+      </ol>
+  </li>
+  
+  <li><h3>Day 31 (August 18, 2022):</h3>
+      <ol type="1" start="66">
+        <li><h4></h4></li>
       </ol>
   </li>
 

@@ -24,12 +24,11 @@ public class Heap
     }
     
     private static int delete(ArrayList<Integer> heap){
-        int min = heap.get(0);
-        swap(heap, 0, heap.size()-1);
-        heap.set(heap.size()-1, null);
-        
-        int parent = 0;
         int n = heap.size();
+        int min = heap.get(0);
+        heap.set(0, heap.get(heap.size()-1));
+        int parent = 0;
+
         while(parent < n){
             int left = parent*2 + 1;
             int right = parent*2 + 2;
@@ -49,7 +48,7 @@ public class Heap
             }
             else break;
         }
-        
+        heap.remove(n-1);
         return min;
     }
     
@@ -69,8 +68,8 @@ public class Heap
 
     public static void main(String args[])
     {
-        int n = 3;
-        int q[][] = {{0,2}, {0,1}, {1}};
+        int n = 2;
+        int q[][] = {{0,1}, {1}};
         System.out.println(minHeap(n, q));
 
     }
